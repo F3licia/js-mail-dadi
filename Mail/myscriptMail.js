@@ -1,26 +1,27 @@
 //chiedo indirizzo Utente//
 
-var notValid
 var mailUtente = prompt("Inserisci la tua mail");
 console.log(mailUtente)
 
-//verifico sia nella lista//
 
-var listaIndirizzi = ["a", "b", "c"];
+var listaIndirizzi = ["tizio@gmail.com", "caio@gmail.com"];
 console.log(listaIndirizzi)
 
+//verifico sia nella lista//
 for (var i = 0; i < listaIndirizzi.length; i++) { 
-       //esito positivo//
-    if (listaIndirizzi[i] === mailUtente) {
+    //esito positivo//
+    if ((listaIndirizzi[i] === mailUtente)>0) {
         console.log("ok")
-        document.writeln("accesso consentito")
+        document.write("Accesso effettuato")
         break;
-       
-    } else if ((listaIndirizzi[i] !== mailUtente) * listaIndirizzi.length) {
-        mailUtente = notValid  
-    }   //esito negativo//
+    } 
+} 
+//esito negativo//
+if (listaIndirizzi[i] !== mailUtente) {
+    console.log("not ok")
+    alert("Mail non valida")
+    document.write("La mail non è valida")
 }
 
-if (mailUtente === notValid) {
-    alert("indirizzo non valido")
-} //messaggio errore//
+
+
