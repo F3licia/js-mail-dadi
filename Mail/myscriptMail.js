@@ -10,7 +10,7 @@ console.log(listaIndirizzi)
 //verifico sia nella lista//
 for (var i = 0; i < listaIndirizzi.length; i++) { 
     //esito positivo//
-    if ((listaIndirizzi[i] === mailUtente)>0) {
+    if (listaIndirizzi[i] === mailUtente) {
         console.log("ok")
         document.write("Accesso effettuato")
         break;
