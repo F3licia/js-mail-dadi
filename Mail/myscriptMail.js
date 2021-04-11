@@ -4,13 +4,13 @@ var mailUtente = prompt("Inserisci la tua mail");
 console.log(mailUtente)
 
 
-var listaIndirizzi = ["tizio@gmail.com", "caio@gmail.com"];
+var listaIndirizzi = ["tizio@gmail.com", "caio@gmail.com", "franca@gmail.com"];
 console.log(listaIndirizzi)
 
 //verifico sia nella lista//
 for (var i = 0; i < listaIndirizzi.length; i++) { 
     //esito positivo//
-    if ((listaIndirizzi[i] === mailUtente)>0) {
+    if (listaIndirizzi[i] === mailUtente) {
         console.log("ok")
         document.write("Accesso effettuato")
         break;
