@@ -3,25 +3,26 @@
 var mailUtente = prompt("Inserisci la tua mail");
 console.log(mailUtente)
 
+var accesso = false 
 
-var listaIndirizzi = ["tizio@gmail.com", "caio@gmail.com", "franca@gmail.com"];
+var listaIndirizzi = ["aaa", "bbb", "ccc"];
 console.log(listaIndirizzi)
 
 //verifico sia nella lista//
 for (var i = 0; i < listaIndirizzi.length; i++) { 
+
     //esito positivo//
     if (listaIndirizzi[i] === mailUtente) {
-        console.log("ok")
-        document.write("Accesso effettuato")
-        break;
+        console.log("ok")    
+        var accesso = true}     
     } 
-} 
+
+console.log(accesso)
+      
 //esito negativo//
-if (listaIndirizzi[i] !== mailUtente) {
-    console.log("not ok")
-    alert("Mail non valida")
-    document.write("La mail non è valida")
+if ( accesso === false ) { alert("Accesso negato")}
+else if ( accesso === true ) {
+    alert("Accesso effettuato");
+    document.write("Accesso effettuato")
 }
-
-
 
