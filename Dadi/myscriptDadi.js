@@ -18,7 +18,7 @@ if (dadoUtente > dadoComputer){
     document.getElementById("messaggio").innerHTML= "Hai vinto!";   //Se vince l'utente//  
 } else if (dadoUtente < dadoComputer){
     document.getElementById("messaggio").innerHTML= "Ho vinto!";    //Se vince la macchina//
-} else if (dadoUtente = dadoComputer){
+} else if (dadoUtente == dadoComputer){
     document.getElementById("messaggio").innerHTML= "Spareggio?";   //Se pari//
 }
 
